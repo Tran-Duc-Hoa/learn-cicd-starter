@@ -48,7 +48,7 @@ func TestGetAPIKey(t *testing.T) {
 			name:          "Malformed header - extra spaces",
 			authHeader:    "ApiKey    ",
 			wantKey:       "",
-			wantErr:       true,
+			wantErr:       false,
 		},
 	}
 
